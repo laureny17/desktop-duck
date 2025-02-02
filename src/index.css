@@ -1,0 +1,51 @@
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrollbars */
+  background: white; /* Or any color you prefer */
+  /* Force the body to render at a low resolution */
+  width: 320px;
+  height: 240px;
+  transform-origin: top left;
+  transform: scale(2.5); /* This will scale our 320x240 content up to 800x600 */
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 8px;
+  letter-spacing: 0;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 12px;
+  margin: 8px;
+  letter-spacing: 0;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#duck {
+  width: 40px; /* 2x the original 20px size */
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -90%);
+  background-image: url("./assets/duck_move_1.png");
+  background-size: contain;
+  image-rendering: pixelated; /* Keeps pixels crisp even when scaled */
+  background-repeat: no-repeat;
+}
+
+.flip {
+  /* Just flip the image horizontally */
+  transform: translate(-50%, -90%) rotateY(180deg);
+}
